@@ -1,0 +1,39 @@
+.add-form {
+	@include flexColumnNC;
+	max-width: 400px;
+	border: 1px solid $light-2;
+	padding: 10px;
+	width: auto;
+	.form-title {
+		font-size: 1.25rem;
+		font-weight: 500;
+	}
+	.input-group {
+		@include flexColumnNC;
+		margin-top: 10px;
+
+		label {
+			margin-bottom: 5px;
+			font-size: 0.85rem;
+			font-weight: 500;
+		}
+
+		.text-input {
+			&::-webkit-inner-spin-button {
+				appearance: none;
+			}
+			outline: none;
+			font: inherit;
+			font-size: 0.9rem;
+			border: none;
+			background-color: $light-2;
+			padding: 5px;
+			border-radius: 0.15em;
+		}
+
+		.label-value {
+			font-size: 1.25rem;
+			font-weight: 600;
+		}
+	}
+}

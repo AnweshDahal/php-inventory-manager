@@ -1,0 +1,33 @@
+table {
+	a {
+		color: $blue-4;
+		text-decoration: underline;
+		&:hover {
+			color: $red-1;
+		}
+	}
+	margin-top: 10px;
+	border: none;
+
+	tr {
+		font-size: 0.9rem;
+		&:nth-child(odd) {
+			background-color: $light-grey-1;
+		}
+
+		.number {
+			text-align: right;
+		}
+
+		th {
+			background-color: $light-grey-2;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		th,
+		td {
+			padding: 5px;
+		}
+	}
+}

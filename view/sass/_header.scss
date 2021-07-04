@@ -1,0 +1,50 @@
+header {
+	@extend %flex;
+	min-height: 48px;
+	padding: 5px;
+	background-color: $gray-1;
+	border-bottom: solid 1px $gray-2;
+	.logo {
+		width: auto;
+		height: inherit;
+		margin-left: 3px;
+		@include flexBox;
+		.logo__img {
+			height: 2em;
+		}
+		.logo__title {
+			font-size: 1.35rem;
+			font-weight: 600;
+			letter-spacing: -0.05em;
+			color: $dark-1;
+		}
+	}
+	.search-form {
+		@extend %flex;
+		margin-left: 2em;
+		form {
+			@include flexBox;
+			.search-bar {
+				height: 30px;
+				font-size: 14px;
+				font-family: inherit;
+				padding: 5px;
+				outline: none;
+				border: 1px solid $light-grey-1;
+				border-radius: 0.15em;
+				margin-right: 10px;
+				font-weight: 500;
+			}
+
+			.search-btn {
+				min-height: 30px;
+				height: auto;
+				@include flexBox;
+				&:hover {
+					cursor: pointer;
+					background-color: $green-3;
+				}
+			}
+		}
+	}
+}

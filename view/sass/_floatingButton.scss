@@ -1,0 +1,22 @@
+.floating-btn {
+	position: fixed;
+	z-index: 100;
+	bottom: 30px;
+	right: 30px;
+	background-color: $blue-1;
+	border: 1px solid $blue-2;
+	border-radius: 34.5px;
+	width: 48px;
+	height: 48px;
+	@include flexBox;
+	a {
+		@include flexColumnCenter;
+		.material-icons-round {
+			font-size: 2rem;
+			font-weight: 500;
+		}
+		height: inherit;
+		width: inherit;
+		color: $light-1;
+	}
+}

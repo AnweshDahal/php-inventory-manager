@@ -1,0 +1,132 @@
+.btn {
+	background: $gray-1;
+	border: 1px solid $gray-2;
+	border-radius: 0.15em;
+	padding: 2px;
+	font-family: inherit;
+}
+
+.search-btn {
+	@include flexBox;
+	background-color: $green-2;
+	border-color: $green-1;
+	* {
+		color: $light-1;
+	}
+}
+
+.filter-btn {
+	border-color: $blue-1;
+	font-size: 0.9rem;
+	font-weight: 500;
+	background-color: $blue-2;
+	color: $light-1;
+	padding: 2px 3px;
+	&:hover {
+		cursor: pointer;
+		background-color: $blue-3;
+	}
+}
+
+.select-full-bordered {
+	font-size: 0.8rem;
+	padding: 2px;
+	border: 1px solid $light-grey-2;
+	border-radius: 0.25em;
+	outline: none;
+	color: $dark-1;
+	option {
+		font-size: 0.8rem;
+	}
+}
+
+.select-null-bordered {
+	font-size: 0.9rem;
+	font-weight: 500;
+	padding: 3px;
+	background-color: $light-2;
+	color: $gray-1;
+	border: none;
+	border-radius: 0.15em;
+
+	outline: none;
+	color: $dark-1;
+	option {
+		font-size: 0.8rem;
+		background-color: $light-1;
+	}
+}
+
+.delete-btn,
+.edit-btn {
+	@include flexBox;
+	border-radius: 0.15em;
+	color: $light-1;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.delete-btn {
+	background-color: $red-1;
+	border-color: $red-2;
+	&:hover {
+		background-color: $red-3;
+	}
+}
+
+.edit-btn {
+	background-color: $blue-1;
+	border-color: $blue-2;
+	&:hover {
+		background-color: $blue-3;
+	}
+}
+
+.add-btn {
+	@include flexBox;
+	color: $light-1;
+	font-size: 0.95rem;
+	padding: 5px;
+	span {
+		font-weight: 500;
+		margin-left: 10px;
+	}
+	background-color: $blue-1;
+	border-color: $blue-2;
+	&:hover {
+		background-color: $blue-3;
+		cursor: pointer;
+	}
+}
+
+.bi {
+	font-size: 1.1rem;
+}
+
+.red-1 {
+	color: $red-1;
+}
+
+.search-not-found-title {
+	font-weight: 300;
+	font-size: 2rem;
+	margin-top: 10px;
+}
+
+.search-not-found-message {
+	font-size: 0.9rem;
+	margin-top: 10px;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.collapsible {
+	margin-top: 20px;
+	@include flexColumnCenter;
+	.collapsible-header {
+		width: 100%;
+	}
+}

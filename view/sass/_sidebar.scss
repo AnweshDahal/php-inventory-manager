@@ -1,0 +1,68 @@
+.sidebar {
+	background-color: $dark-1;
+	width: 12.5em;
+	position: relative;
+	.nav {
+		list-style-type: none;
+		@include flexColumnNC;
+		font-size: 0.9rem;
+
+		.nav__header,
+		.nav__navitem {
+			padding: 5px;
+			height: auto;
+
+			.navitem__text {
+				margin-left: 5px;
+				font-weight: 500;
+				line-height: 100%;
+			}
+		}
+
+		.nav__header {
+			margin-top: 10px;
+			color: $light-grey-1;
+			@extend %flex;
+		}
+
+		.nav__navitem {
+			border-left: 3px solid transparent;
+			a {
+				@extend %flex;
+				height: auto;
+				color: $light-1;
+				.navitem__text {
+					margin-left: 5px;
+				}
+			}
+			&:hover {
+				background-color: $dark-2;
+				border-left-color: $green-2;
+				cursor: pointer;
+			}
+		}
+		.selected {
+			background-color: $dark-2;
+			border-left-color: $blue-4;
+			&:hover {
+				background-color: $dark-2;
+				border-left-color: $red-1;
+				cursor: pointer;
+			}
+		}
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		@include flexBox;
+		background-color: $dark-2;
+		padding: 5px 0px;
+		span {
+			font-weight: 300;
+			color: $light-1;
+			font-size: 0.8rem;
+		}
+	}
+}

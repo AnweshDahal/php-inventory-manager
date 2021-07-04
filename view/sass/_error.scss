@@ -1,0 +1,32 @@
+.error {
+	height: 100%;
+	@include flexColumnCenter;
+
+	.display {
+		color: $light-grey-1;
+		span {
+			font-size: 15rem;
+			user-select: none;
+		}
+		.bi {
+			font-size: 10rem;
+			user-select: none;
+		}
+	}
+	.error__title {
+		font-size: 3rem;
+		font-weight: 200;
+		color: $red-1;
+	}
+	.error__description {
+		font-size: 1rem;
+	}
+	a {
+		margin-top: 20px;
+		font-weight: 400;
+		@include flexBox;
+		.btn-text {
+			font-size: 1.25rem;
+		}
+	}
+}
